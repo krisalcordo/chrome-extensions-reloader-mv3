@@ -1,38 +1,44 @@
 {
-	"name": "Extensions Reloader",
-	"manifest_version": 2,
-	"version": "1.15",
-	"icons": {
-		"16": "icon16.png",
-		"48": "icon48.png",
-		"128": "icon128.png"
-	},
-	"background": {
-		"page": "background.html"
-	},
-	"commands": {
-      "reload": {
-         "description": "Reload all extensions in development",
-         "suggested_key": {
-            "default": "Alt+Shift+R"
-         }
-      }
-   },
-   "options_ui": {
-    "page": "options.html",
-    "chrome_style": true
+  "name": "Extensions Reloader",
+  "manifest_version": 3,
+  "version": "2",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
   },
-	"permissions": [
-		"tabs",
-		"management",
-		"storage",
-		"webRequest",
-		"webRequestBlocking",
-		"http://reload.extensions/"
-	],
-	"browser_action": {
-		"default_icon": "icon19.png",
-		"default_title": "Reload Extensions"
-	},
-	"description": "Reload all unpacked extensions using the extension's toolbar button or by browsing to \"http://reload.extensions\""
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "commands": {
+    "reload": {
+      "description": "Reload all extensions in development",
+      "suggested_key": {
+        "default": "Alt+Shift+R"
+      }
+    }
+  },
+  "options_ui": {
+    "page": "options.html"
+  },
+  "permissions": [
+    "tabs",
+    "management",
+    "storage",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "host_permissions": [
+    "http://reload.extensions/"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_title": "Reload Extensions"
+  },
+  "description": "Reload all unpacked extensions using the extension's toolbar button or by browsing to 'http://reload.extensions'"
 }
