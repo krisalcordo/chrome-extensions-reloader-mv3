@@ -25,9 +25,7 @@
   "permissions": [
     "tabs",
     "management",
-    "storage",
-    "webRequest",
-    "webRequestBlocking"
+    "storage"
   ],
   "host_permissions": [
     "http://reload.extensions/"
