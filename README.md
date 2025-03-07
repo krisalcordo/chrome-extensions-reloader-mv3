@@ -1,4 +1,4 @@
-# MV3 Extensions Reloader for Chrome™
+# MV3 Extensions Reloader for Chrome
 
 Reloads all unpacked extensions with a single click.
 
