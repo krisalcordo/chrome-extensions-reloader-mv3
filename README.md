@@ -10,7 +10,7 @@ If you've ever developed a Google Chrome™ extension, you might have wanted to 
 
 1. The extension's toolbar button
 
-2. Browsing to "http://reload.extensions". This is intended for automating the reload process using "post build" scripts - just browse to "http://reload.extensions", and chrome will open with freshly reloaded extensions. (In progress)
+2. (In progress) Browsing to "http://reload.extensions". This is intended for automating the reload process using "post build" scripts - just browse to "http://reload.extensions", and chrome will open with freshly reloaded extensions. 
 
 3. Using the keyboard shortcut. The default is Alt-Shift-r or Opt-Shift-r on Mac. Open `chrome://extensions/shortcuts` to customize
 
